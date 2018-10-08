@@ -57,6 +57,14 @@ int main(){
 			std::cout<<a<<" ";
 		}
 		std::cout<<iter->AppearanceCount()<<std::endl;
-	}	
+	}
+	std::cout<<std::endl;
+	for(auto iter=resultset.rbegin();iter!=resultset.rbegin()+100;++iter){
+		for(auto &a:iter->Result()){
+			std::cout<<a<<" ";
+		}
+		std::cout<<iter->AppearanceCount()<<std::endl;
+	}
 	std::cout<<resultset.size()<<std::endl;
 	return 0;
+}
